@@ -1,0 +1,32 @@
+---
+import AboutCard from "./AboutCard.astro";
+---
+
+
+<div class="md:w-4/5 w-full flex flex-col justify-center items-center p-10 md:p-20">
+    <div class="w-full flex-col md:flex-row justify-center items-center">
+        <h1 class="text-4xl font-bold text-white text-center mb-3">About Me</h1>
+        <p class=" text-slate-300 mb-14 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, perferendis.</p>
+    </div>
+
+    <div class="w-full flex flex-col md:flex-row md:gap-10 justify-center items-center">
+        <div class="izq md:flex-1 md:flex md:justify-center">
+            <div class="w-48 h-48 md:w-72 md:h-72 rounded-xl bg-cover bg-center shadow-xl shadow-sky-900/60" style="background-image: url('foto.jpg')">
+            </div>
+        </div>
+
+        <div class="der md:flex-1 mt-10 md:mt-12">
+            <div class="flex flex-wrap justify-center gap-3  p-3">
+                <AboutCard cardIcon="icon icon-award text-2xl" cardTitle="Experience" cardDescription="8 + Years"/>
+                <AboutCard cardIcon="icon icon-briefcase text-2xl" cardTitle="Completed" cardDescription="48 Projects"/>
+                <AboutCard cardIcon="icon icon-award text-2xl" cardTitle="Support" cardDescription="Online 24/7"/>
+            </div>
+            <p class="text-center text-slate-500 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deleniti cumque non excepturi suscipit, dolores eveniet adipisci ut eius labore? Optio, nobis modi. Consequuntur dolore iusto eveniet quisquam, pariatur velit magni veritatis expedita. Quam quis ea magnam quidem tempora aut illo praesentium accusantium, quibusdam quia sed hic assumenda, facere aperiam.</p>
+            <div class="w-full flex justify-center">
+                <button class="px-5 py-2 w-40 bg-sky-700 rounded-lg hover:bg-sky-500 hover:shadow-lg hover:shadow-sky-900/20 font-semibold">Download CV</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

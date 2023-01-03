@@ -1,0 +1,15 @@
+---
+const {cardIcon, cardTitle, cardDescription} = Astro.props
+
+interface Props {
+    cardIcon?: string, 
+    cardTitle?: string, 
+    cardDescription?: string
+}
+
+---
+<div class="w-28 h-24 border bg-slate-800 border-slate-700 p-2 flex flex-col justify-center items-center rounded-lg text-sm gap-1 hover:bg-sky-700 cursor-pointer">
+    <span class={cardIcon}></span>
+    <h3 class="font-semibold mb-1">{cardTitle}</h3>
+    <p class="text-xs font-light">{cardDescription}</p>
+</div>

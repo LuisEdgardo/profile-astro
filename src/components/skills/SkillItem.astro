@@ -1,0 +1,16 @@
+---
+const {itemTitle, itemLevel} = Astro.props
+
+interface Props {
+    itemTitle?: string,
+    itemLevel?: string
+}
+---
+
+<div class="flex">
+    <div class="mr-3"><span class="icon icon-check-circle font-bold text-xs"/></div>
+    <div class="flex-1">
+        <h3 class="font-semibold">{itemTitle}</h3>
+        <p class="text-xs font-light">{itemLevel}</p>
+    </div>
+</div>
